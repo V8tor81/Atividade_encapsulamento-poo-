@@ -1,0 +1,22 @@
+class Casa:
+ def __init__(self, quarto):
+    self.__quarto = quarto
+ @property
+ def quarto(self):
+    return self.__quarto
+ @quarto.setter
+ def quarto (self,quarto):
+    self.__quarto= quarto
+
+
+quarto=input("no seu quarto tem tv?")
+tv=Casa(quarto)
+print(tv.quarto)
+if quarto=="sim":
+ tv.__quarto="não"
+ print(tv.__quarto)
+else:
+    tv.__quarto="sim"
+    print(tv.__quarto)
+
+#finalizado
